@@ -1,0 +1,14 @@
+# Ignore all React/Parcel generated files in any folder
+
+node_modules/
+dist/
+.parcel-cache/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
