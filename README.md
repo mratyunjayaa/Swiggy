@@ -8,17 +8,14 @@ This project fetches **live restaurant and menu data** from Swiggy APIs, impleme
 
 # 📸 Preview
 
-> Add screenshots here after deployment.
-
 - 🏠 Home Page <img width="1901" height="877" alt="image" src="https://github.com/user-attachments/assets/bbebcb3b-d29d-420e-9dd1-4735049418be" /> <img width="1871" height="857" alt="image" src="https://github.com/user-attachments/assets/df323523-0029-40d9-b2b4-2f2f4d9f6e49" />
 
 
-- 📜 Restaurant Menu! ![alt text](image-2.png) <img width="1893" height="963" alt="image" src="https://github.com/user-attachments/assets/24285d8d-348d-47c4-8979-ca9da5d81da4" />
+- 📜 Restaurant Menu!  <img width="1893" height="963" alt="image" src="https://github.com/user-attachments/assets/24285d8d-348d-47c4-8979-ca9da5d81da4" />
 
-- 🍽️ Restaurant Listing [alt text](image-1.png) <img width="1878" height="957" alt="image" src="https://github.com/user-attachments/assets/708da6a0-e7e4-4743-b585-8a671a32da4b" />
+- 🍽️ Restaurant Listing <img width="1878" height="957" alt="image" src="https://github.com/user-attachments/assets/708da6a0-e7e4-4743-b585-8a671a32da4b" />
 
-- 🔍 Search
-- ✨ Shimmer Loading ![alt text](image.png) <img width="1895" height="957" alt="image" src="https://github.com/user-attachments/assets/da9feb05-6f39-4771-a4f7-b3e5615334df" />
+- ✨ Shimmer Loading <img width="1895" height="957" alt="image" src="https://github.com/user-attachments/assets/da9feb05-6f39-4771-a4f7-b3e5615334df" />
 
   
 
