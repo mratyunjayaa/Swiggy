@@ -1,4 +1,4 @@
-﻿# 🍔 Swiggy Clone — React Frontend Mega Project
+﻿# 🍔 Swiggy Clone 
 
 A modern, responsive, and feature-rich Swiggy Clone built using **React**, **React Router DOM v6**, and **Tailwind CSS**.
 
