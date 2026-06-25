@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header className="bg-[#ff5200] font-swiggy">
@@ -77,19 +79,21 @@ export default function Header() {
         </div>
 
         <div className="max-w-[80%] container mx-auto flex justify-center gap-4 mt-10">
+          <Link to="/restaurent">
+          
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/faa6d07d-e43c-4aa1-90d8-eda6c14e467d_Food2BU.png"
+              alt=""
+            />
+          </Link>
+          
+{/* 
           <a href="https://www.swiggy.com/restaurants">
             <img
               src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/faa6d07d-e43c-4aa1-90d8-eda6c14e467d_Food2BU.png"
               alt=""
             />
-          </a>
-
-          <a href="https://www.swiggy.com/restaurants">
-            <img
-              src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/faa6d07d-e43c-4aa1-90d8-eda6c14e467d_Food2BU.png"
-              alt=""
-            />
-          </a>
+          </a> */}
 
           <a href="https://www.swiggy.com/instamart?entryId=1234&entryName=mainTileEntry4&v=1">
             <img

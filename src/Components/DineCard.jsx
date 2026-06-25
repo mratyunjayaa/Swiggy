@@ -1,3 +1,4 @@
+
 export default function DineCard({ RestData }) {
   const info = RestData?.info;
 
