@@ -1,8 +1,9 @@
-﻿# 🍔 Swiggy Clone 
 
-A modern, responsive, and feature-rich Swiggy Clone built using **React**, **React Router DOM v6**, and **Tailwind CSS**.
+# 🧡 Swiggy Clone - Food & Dineout Platform
 
-This project fetches **live restaurant and menu data** from Swiggy APIs, implements dynamic routing, shimmer loading screens, restaurant search, food category browsing, and recursive menu rendering similar to the original Swiggy application.
+A modern **Swiggy-inspired Food Delivery & Dineout platform** built with **React**, **Redux Toolkit**, **React Router**, and **Tailwind CSS**.
+
+The project recreates the core Swiggy experience including restaurant discovery, live menu browsing, shopping cart management, and a simulated payment flow while focusing on clean architecture, responsive UI, and reusable React components.
 
 ---
 
@@ -21,110 +22,115 @@ This project fetches **live restaurant and menu data** from Swiggy APIs, impleme
 
 ---
 
-# 🚀 Features
+# 🌐 Live Demo
 
-## 🏠 Home Page
+**🚀 Live Website**
 
-- Live Restaurant Listing
-- Live Food Categories
-- Live Dineout Section
-- Responsive UI
-- Beautiful Card Design
-- Search Restaurants
-- Dynamic Restaurant Rendering
+👉 https://swiggybytomar.netlify.app
 
 ---
 
-## 🍽️ Restaurant Menu
+# 📂 GitHub Repository
 
-- Live Swiggy Menu
-- Restaurant Information
-- Veg & Non-Veg Indicators
-- Price Detection
-- Ratings
-- Description
-- Image Rendering
+👉 https://github.com/mratyunjayaa/Swiggy-Clone
 
 ---
 
-## 📂 Nested Menu Rendering
+# ✨ Features
 
-Swiggy returns nested categories like
+### 🍔 Food Delivery Experience
 
-```
-Pizza
- ├── Veg Pizza
- │      ├── Margherita
- │      ├── Farmhouse
- │
- └── Non Veg Pizza
-        ├── Chicken Pizza
-```
-
-This project recursively renders unlimited nested categories.
+* Responsive Landing Page
+* Restaurant Listing
+* Live Restaurant Menu
+* Dynamic Restaurant Details
+* Sticky Navigation
+* Search & Browse Experience
+* Smooth Horizontal Carousels
+* Mobile-first Responsive Design
 
 ---
 
-## 🔍 Smart Search
+### 🥗 Menu System
 
-- Search by Restaurant Name
-- Instant Filtering
-- State-driven Rendering
-
----
-
-## ⚡ Shimmer Loading
-
-Custom shimmer UI while APIs are loading.
-
-- Home Page Shimmer
-- Restaurant Menu Shimmer
+* Dynamic Menu Rendering
+* Category Accordions
+* Nested Menu Sections
+* Veg / Non-Veg Labels
+* Live Item Count
+* Restaurant Information
+* Offers & Ratings Display
 
 ---
 
-## 📱 Responsive Design
+### 🛒 Shopping Cart
 
-Works perfectly on
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile
-
----
-
-# ⚙️ Tech Stack
-
-- React
-- React Router DOM v6
-- Tailwind CSS
-- Parcel
-- JavaScript (ES6+)
-- Fetch API
+* Add Items
+* Remove Items
+* Increase / Decrease Quantity
+* Live Cart Counter
+* Automatic Total Price Calculation
+* Global Cart State using Redux Toolkit
 
 ---
 
-# 📂 Folder Structure
+### 💳 Checkout
 
-```
-src
+* Dedicated Checkout Page
+* Cart Summary
+* Order Pricing Breakdown
+* Payment Gateway Simulation
+* Cash on Delivery (COD)
+* QR Code Payment Option
+
+---
+
+### ⚡ User Experience
+
+* Skeleton Loading (Shimmer UI)
+* Dynamic Page Titles
+* Dynamic Favicons
+* Responsive Navigation
+* Optimized Component Structure
+* Reusable UI Components
+
+---
+
+# 🛠 Tech Stack
+
+| Technology       | Purpose                 |
+| ---------------- | ----------------------- |
+| React 19         | Frontend Library        |
+| Redux Toolkit    | Global State Management |
+| React Router DOM | Routing                 |
+| Tailwind CSS     | Styling                 |
+| Parcel           | Bundler                 |
+| Lucide React     | Icons                   |
+
+---
+
+# 📁 Folder Structure
+
+```text
+src/
 │
-├── Components
+├── Components/
 │   ├── Header.jsx
-│   ├── Home.jsx
+│   ├── RestHeader.jsx
 │   ├── Restaurant.jsx
-│   ├── RestaurantMenu.jsx
 │   ├── RestCard.jsx
-│   ├── RestInfo.jsx
-│   ├── FoodCard.jsx
-│   ├── FoodOptions.jsx
-│   ├── DineCard.jsx
-│   ├── DineOption.jsx
+│   ├── FoodOption.jsx
 │   ├── MenuCard.jsx
-│   ├── Shimmer.jsx
-│   └── ShimmerMenu.jsx
+│   ├── CheckOut.jsx
+│   ├── PaymentGateway.jsx
+│   ├── Footer.jsx
+│   └── Shimmer.jsx
 │
-├── Utils
+├── Stored/
+│   ├── CartSlicer.js
+│   └── Store.js
+│
+├── Utils/
 │   ├── FoodData.js
 │   └── DineData.js
 │
@@ -137,25 +143,37 @@ src
 
 # 📦 Installation
 
-Clone the repository
+## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mratyunjayaa/Swiggy.git
+git clone https://github.com/mratyunjayaa/Swiggy-Clone.git
 ```
 
-Move inside project
+---
+
+## 2. Move into Project
 
 ```bash
 cd Swiggy-Clone
 ```
 
-Install dependencies
+---
+
+## 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-Run the project
+---
+
+## 4. Start Development Server
+
+```bash
+npm run dev
+```
+
+or
 
 ```bash
 npm start
@@ -163,65 +181,81 @@ npm start
 
 ---
 
-# 🔥 Major React Concepts Used
+## 5. Build Production Version
 
-- Functional Components
-- JSX
-- Props
-- State Management
-- useState()
-- useEffect()
-- Conditional Rendering
-- Optional Chaining
-- List Rendering
-- Keys
-- Dynamic Routing
-- URL Params
-- Nested Components
-- Recursive Components
+```bash
+npm run build
+```
 
 ---
 
-# 🎯 Tailwind Concepts Used
 
-- Flexbox
-- Grid
-- Responsive Design
-- Utility Classes
-- Hover Effects
-- Gradients
-- Shadows
-- Animations
-- Custom Shimmer
+# 📜 Available Scripts
+
+```json
+"scripts": {
+  "dev": "parcel src/index.html",
+  "start": "parcel src/index.html",
+  "build": "parcel build src/index.html",
+  "clean": "rm -rf .parcel-cache dist"
+}
+```
 
 ---
 
-# 📡 API Features
+# 📦 Dependencies
 
-This project uses live Swiggy APIs to fetch
+```text
+React
+React DOM
+Redux Toolkit
+React Redux
+React Router DOM
+Tailwind CSS
+Parcel
+Lucide React
+```
 
-- Restaurants
-- Restaurant Details
-- Menus
-- Food Categories
-- Dineout Data
+---
 
-> **Note:** Swiggy APIs are not officially public. A proxy or backend may be required because of CORS restrictions.
+# 🎯 Learning Highlights
+
+This project helped me understand:
+
+* React Component Architecture
+* Props & State Management
+* React Hooks
+* React Router
+* Redux Toolkit
+* Global State Management
+* Dynamic Routing
+* API Data Handling
+* Responsive Design
+* Tailwind CSS
+* Component Reusability
+* UI Performance Optimization
 
 ---
 
 # 🚀 Future Improvements
 
-- Login Authentication
-- Cart Functionality
-- Redux Toolkit
-- Favorites
-- Lazy Loading
-- Infinite Scrolling
-- Debounced Search
-- Payment Integration
-- Theme Switcher
-- PWA Support
+* User Authentication
+* Login & Signup
+* Real Payment Gateway Integration
+* Search Suggestions
+* Restaurant Filters
+* Wishlist
+* Dark Mode
+* User Profile
+* Order History
+* Address Management
+* Coupons & Offers
+* Favorites
+* Backend Integration
+* Database Support
+* Firebase Authentication
+* Order Tracking
+* Progressive Web App (PWA)
 
 ---
 
@@ -244,7 +278,7 @@ git checkout -b feature/YourFeature
 git commit -m "Add Your Feature"
 ```
 
-4. Push to GitHub
+4. Push your branch
 
 ```bash
 git push origin feature/YourFeature
@@ -252,45 +286,44 @@ git push origin feature/YourFeature
 
 5. Open a Pull Request
 
-Please make sure your code follows the existing project structure and is properly tested before submitting.
-
----
-
-# 🐛 Found a Bug?
-
-If you find a bug or have suggestions:
-
-- Open an Issue
-- Describe the problem
-- Share screenshots if possible
-- Mention the browser and OS
+Please make sure your code follows the existing project structure and coding style.
 
 ---
 
 # ⭐ Support
 
-If you found this project useful,
+If you found this project helpful,
 
-⭐ Star this repository
+⭐ Star the repository
 
-It motivates me to build more open-source React projects.
+🍴 Fork the repository
+
+🐞 Report issues
+
+💡 Suggest new features
+
+Your support motivates me to build more open-source projects.
+
+---
+
+# 👨‍💻 Author
+
+**Vishal Tomar**
+
+Frontend Developer | React Developer
+
+GitHub:
+https://github.com/mratyunjayaa
 
 ---
 
 # 📄 License
 
-This project is licensed under the MIT License.
+This project is developed for **learning and educational purposes only**.
 
-Feel free to use it for learning and personal projects.
-
----
-
-## 👨‍💻 Author
-
-**Vishal Tomar**
-
-GitHub: https://github.com/mratyunjayaa
+Swiggy™ is a registered trademark of its respective owners. This project is **not affiliated with or endorsed by Swiggy**.
 
 ---
 
-### If this project helped you learn React, consider giving it a ⭐ on GitHub!
+## ⭐ If you like this project, don't forget to Star the Repository!
+
