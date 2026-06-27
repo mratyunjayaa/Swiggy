@@ -17,6 +17,12 @@ The project recreates the core Swiggy experience including restaurant discovery,
 - 🍽️ Restaurant Listing <img width="1878" height="957" alt="image" src="https://github.com/user-attachments/assets/708da6a0-e7e4-4743-b585-8a671a32da4b" />
 
 - ✨ Shimmer Loading <img width="1895" height="957" alt="image" src="https://github.com/user-attachments/assets/da9feb05-6f39-4771-a4f7-b3e5615334df" />
+-  Cart - <img width="1902" height="871" alt="image" src="https://github.com/user-attachments/assets/29666814-d428-4d04-8875-faba399823fe" />
+- Payment - <img width="1910" height="872" alt="image" src="https://github.com/user-attachments/assets/974cde18-ca2a-445d-b538-154827d505fe" />
+- Successful Order - <img width="1918" height="863" alt="image" src="https://github.com/user-attachments/assets/87af596b-69e7-47e3-9a73-bd5d842fa7ea" />
+
+
+
 
   
 
